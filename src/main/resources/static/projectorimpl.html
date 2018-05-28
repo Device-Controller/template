@@ -1,0 +1,20 @@
+<!--IMPORTANT! Due to how we set up spring to work, the file context will ALWAYS be in the static folder,
+ any files in a sub directory needs to be referred to from this context-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Template Projector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/../images/favicon.ico"/> <!--our favicon-->
+    <link rel="stylesheet" href="../theme.css"> <!-- our base theme-->
+    <script src="../templatescript.js"></script><!--base script that loads the navbar, and sets-up various tools you might need-->
+</head>
+<body>
+<div include-html="template.html"></div>
+<script>
+    includeHTML();
+</script>
+<!--Write body here, the includeHTML function needs to be run first-->
+</body>
+</html>
